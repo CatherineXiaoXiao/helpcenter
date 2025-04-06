@@ -1,0 +1,42 @@
+.searchContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+:global(.DocSearch-Button) {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--ifm-color-white);
+  border: 1px solid var(--ifm-color-gray-300);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+:global(.DocSearch-Button:hover) {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px var(--ifm-color-primary);
+}
+
+:global(.DocSearch-Button-Placeholder) {
+  color: var(--ifm-color-gray-600);
+  font-size: 1rem;
+}
+
+:global(.DocSearch-Button-Keys) {
+  display: flex;
+  gap: 0.5rem;
+}
+
+:global(.DocSearch-Button-Key) {
+  background: var(--ifm-color-gray-100);
+  color: var(--ifm-color-gray-600);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+} 
