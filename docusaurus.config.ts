@@ -10,10 +10,10 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // GitHub Pages 配置
-  url: 'https://[YOUR_GITHUB_USERNAME].github.io',  // 替换为您的 GitHub 用户名
-  baseUrl: '/help-center/',  // 项目名称
-  organizationName: '[YOUR_GITHUB_USERNAME]',  // 替换为您的 GitHub 用户名
-  projectName: 'help-center',  // 仓库名称
+  url: 'https://catherinexiaoxiao.github.io',
+  baseUrl: '/helpcenter/',
+  organizationName: 'CatherineXiaoXiao',
+  projectName: 'helpcenter',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/[YOUR_GITHUB_USERNAME]/help-center/edit/main/',
+          editUrl: 'https://github.com/CatherineXiaoXiao/helpcenter/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
@@ -54,7 +54,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/[YOUR_GITHUB_USERNAME]/help-center/edit/main/',
+          editUrl: 'https://github.com/CatherineXiaoXiao/helpcenter/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -89,7 +89,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/[YOUR_GITHUB_USERNAME]/help-center',
+          href: 'https://github.com/CatherineXiaoXiao/helpcenter',
           label: 'GitHub',
           position: 'right',
         },
@@ -129,7 +129,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/[YOUR_GITHUB_USERNAME]/help-center',
+              href: 'https://github.com/CatherineXiaoXiao/helpcenter',
             },
           ],
         },
