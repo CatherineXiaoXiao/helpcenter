@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhelp_center=self.webpackChunkhelp_center||[]).push([[8777],{4039:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/helpcenter/zh/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
