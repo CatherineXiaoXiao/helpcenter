@@ -34,7 +34,7 @@ Call us at +1 (555) 123-4567:
 
 ## Before Contacting Support
 
-1. Check our [documentation](/docs)
+1. Check our [documentation](/docs/intro)
 2. Search for similar issues
 3. Try basic troubleshooting
 4. Gather relevant information
@@ -48,4 +48,4 @@ Call us at +1 (555) 123-4567:
 
 ## Need More Help?
 
-Visit our [help center](/docs) for additional resources 
+Visit our [help center](/docs/intro) for additional resources 
