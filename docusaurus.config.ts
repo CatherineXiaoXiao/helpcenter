@@ -14,6 +14,7 @@ const config: Config = {
   baseUrl: '/helpcenter/',
   organizationName: 'CatherineXiaoXiao',
   projectName: 'helpcenter',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
