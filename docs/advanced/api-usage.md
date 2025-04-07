@@ -67,4 +67,4 @@ try {
 
 ## Need Help?
 
-Check our [API documentation](../) or contact [support](../troubleshooting/contact-support). 
+Check our [API documentation](/docs/advanced) or contact [support](/docs/troubleshooting/contact-support). 

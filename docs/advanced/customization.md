@@ -69,4 +69,4 @@ async function automateTask() {
 
 ## Need Help?
 
-For complex customizations, consider reaching out to our [professional services team](../support/pro-services). 
+For complex customizations, consider reaching out to our [professional services team](/docs/support/pro-services). 

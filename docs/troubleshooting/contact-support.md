@@ -4,64 +4,48 @@ sidebar_position: 3
 
 # Contact Support
 
-Need help? Here's how to reach our support team.
+Learn how to get help from our support team.
 
-## Support Channels
+## Support Options
 
 ### Email Support
 
-Send an email to: support@example.com
-
-Include in your email:
-1. Subject line describing the issue
-2. Detailed description of the problem
-3. Steps to reproduce
-4. Screenshots or error messages
-5. System information
+Send an email to support@example.com with:
+- Subject line describing the issue
+- Detailed description of the problem
+- Steps to reproduce
+- Screenshots if applicable
+- Error messages if any
 
 ### Live Chat
 
-Available Monday-Friday, 9AM-5PM EST
-- Click the chat icon in the bottom right
-- Describe your issue
-- Attach relevant files
-- Wait for agent response
+Available Monday to Friday, 9 AM to 5 PM EST:
+1. Click the chat icon
+2. Describe your issue
+3. Wait for agent response
+4. Follow instructions
 
 ### Phone Support
 
-Call: +1 (800) 123-4567
-Hours: 24/7 for critical issues
+Call us at +1 (555) 123-4567:
+- Available 24/7 for critical issues
+- Have your account information ready
+- Be prepared to describe the problem
 
 ## Before Contacting Support
 
-1. Check the [documentation](../)
-2. Search the [knowledge base](../)
-3. Review [common issues](./common-issues)
+1. Check our [documentation](/docs)
+2. Search for similar issues
+3. Try basic troubleshooting
 4. Gather relevant information
 
-## Support Levels
+## Response Times
 
-### Basic Support
-- Email response within 24 hours
-- Access to knowledge base
-- Community forum access
+- Critical issues: < 1 hour
+- High priority: < 4 hours
+- Normal priority: < 24 hours
+- Low priority: < 72 hours
 
-### Premium Support
-- Priority response
-- Phone support
-- Dedicated account manager
-- Custom training sessions
+## Need More Help?
 
-## Emergency Support
-
-For critical issues affecting production:
-1. Call the emergency line
-2. Use the emergency contact form
-3. Follow the escalation procedure
-
-## Feedback
-
-Help us improve by providing feedback:
-- Rate your support experience
-- Suggest improvements
-- Report documentation issues 
+Visit our [help center](/docs) for additional resources 
