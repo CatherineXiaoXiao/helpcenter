@@ -205,53 +205,45 @@ main > article {
 
 /* 相关文章样式 */
 .related-articles {
-  margin-top: 3rem !important;
-  padding: 1.5rem !important;
-  border-top: 2px solid var(--ifm-color-primary-lighter) !important;
-  background-color: var(--ifm-color-secondary) !important;
-  border-radius: 8px !important;
-  clear: both !important;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .related-articles h2 {
-  font-size: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-  color: var(--ifm-color-primary) !important;
-  text-align: center !important;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
-.related-articles .card-container {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
-  gap: 1rem !important;
-  padding: 0 !important;
-  list-style: none !important;
-  margin: 0 !important;
+.card-container {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
-.related-articles .card {
-  border: 1px solid var(--ifm-color-primary-lightest) !important;
-  border-radius: var(--ifm-card-border-radius) !important;
-  box-shadow: var(--ifm-global-shadow-lw) !important;
-  transition: all 0.3s ease !important;
-  padding: 1rem !important;
-  margin: 0 !important;
+.card-container .card {
+  transition: all 0.3s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius);
 }
 
-.related-articles .card:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 8px 16px rgba(1, 193, 154, 0.15) !important;
-  border-color: var(--ifm-color-primary) !important;
-  background-color: white !important;
+.card-container .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-primary);
 }
 
 .related-article-link {
-  display: block !important;
-  font-weight: 500 !important;
-  color: var(--ifm-color-primary) !important;
-  text-decoration: none !important;
-  font-size: 1.1rem !important;
-  text-align: center !important;
+  display: block;
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.related-article-link:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

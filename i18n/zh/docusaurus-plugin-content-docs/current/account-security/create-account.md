@@ -1,6 +1,9 @@
 ---
 sidebar_position: 1
+description: "了解如何创建和设置您的CoinByte账户，包括注册流程和验证要求。"
 ---
+
+import RelatedArticles from '@site/src/components/RelatedArticles';
 
 # Create an Account
 
@@ -49,3 +52,5 @@ If you encounter any problems during the registration process, try the following
 - Enable two-factor authentication
 - Don't access your account on unsecured networks
 - Regularly check account activity 
+
+<RelatedArticles category="account-security" /> 

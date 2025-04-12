@@ -1,6 +1,9 @@
 ---
 sidebar_position: 2
+description: "了解如何设置和使用双重认证来增强您的CoinByte账户安全性。"
 ---
+
+import RelatedArticles from '@site/src/components/RelatedArticles';
 
 # Two-Factor Authentication (2FA)
 
@@ -61,3 +64,5 @@ If you can't access your 2FA device:
 - Keep your backup recovery codes in a secure place
 - Regularly check your login activity
 - Consider using multiple 2FA methods for enhanced security 
+
+<RelatedArticles category="account-security" /> 

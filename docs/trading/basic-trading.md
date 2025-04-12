@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
+description: "Learn how to create and set up your CoinByte account, including registration process and verification requirements."
+title: "basic"
 ---
 
-# 基础交易指南
+# 基础交易指南 1
 
 学习如何在CoinByte平台上进行基础交易操作。
 

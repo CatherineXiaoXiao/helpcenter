@@ -1,6 +1,9 @@
 ---
 sidebar_position: 1
+description: "Learn how to create and set up your CoinByte account, including registration process and verification requirements."
 ---
+
+import RelatedArticles from '@site/src/components/RelatedArticles';
 
 # Create an Account
 
@@ -48,4 +51,6 @@ If you encounter any problems during the registration process, try the following
 - Use a strong password and change it regularly
 - Enable two-factor authentication
 - Don't access your account on unsecured networks
-- Regularly check account activity 
+- Regularly check account activity
+
+<RelatedArticles category="account-security" /> 

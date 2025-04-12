@@ -1,6 +1,9 @@
 ---
 sidebar_position: 2
+description: "Learn how to set up and use two-factor authentication to enhance your CoinByte account security."
 ---
+
+import RelatedArticles from '@site/src/components/RelatedArticles';
 
 # Two-Factor Authentication (2FA)
 
@@ -61,3 +64,5 @@ If you can't access your 2FA device:
 - Keep your backup recovery codes in a secure place
 - Regularly check your login activity
 - Consider using multiple 2FA methods for enhanced security 
+
+<RelatedArticles category="account-security" /> 
