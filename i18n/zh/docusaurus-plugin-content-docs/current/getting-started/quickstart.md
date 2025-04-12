@@ -1,46 +1,40 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# 快速入门
+# Quick Start Guide
 
-本指南将帮助您快速开始使用我们的产品。
+Get up and running quickly with our product.
 
-## 安装
+## First Steps
 
-首先，您需要安装我们的产品：
+1. Launch the application
+2. Sign in to your account
+3. Complete the setup wizard
+4. Explore the dashboard
 
-```bash
-npm install your-product
-```
+## Basic Features
 
-## 配置
+### Navigation
 
-创建配置文件 `config.json`：
+- Use the sidebar to access different sections
+- Search for features using the search bar
+- Access settings from the user menu
 
-```json
-{
-  "apiKey": "your-api-key",
-  "environment": "production"
-}
-```
+### Common Tasks
 
-## 使用示例
+1. Creating a new project
+2. Adding team members
+3. Setting up notifications
+4. Configuring preferences
 
-这是一个基本的使用示例：
+## Tips for Beginners
 
-```typescript
-import { YourProduct } from 'your-product';
+- Start with the basic features
+- Use the help center for guidance
+- Join our community forum
+- Watch tutorial videos
 
-const product = new YourProduct({
-  apiKey: 'your-api-key'
-});
+## Next Steps
 
-await product.doSomething();
-```
-
-## 下一步
-
-- 查看[高级配置选项](/docs/advanced/customization)
-- 了解[最佳实践](/docs/advanced/best-practices)
-- 探索[API参考](/docs/advanced/api-usage) 
+Ready to learn more? Check out our advanced documentation or contact support if you need help. 

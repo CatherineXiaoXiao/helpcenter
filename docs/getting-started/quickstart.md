@@ -37,4 +37,4 @@ Get up and running quickly with our product.
 
 ## Next Steps
 
-Ready to learn more? Check out our [advanced guides](../advanced/customization). 
+Ready to learn more? Check out our advanced documentation or contact support if you need help. 
