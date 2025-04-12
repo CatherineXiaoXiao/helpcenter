@@ -13,33 +13,38 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  Create as many sidebars as you want.
  */
 const sidebars: SidebarsConfig = {
-  tutorialSidebar: [
+  docs: [
     {
       type: 'category',
-      label: 'Getting Started',
+      label: 'Account, security, verification',
       items: [
-        'getting-started/introduction',
-        'getting-started/installation',
-        'getting-started/quickstart',
+        'account-security/create-account',
+        'account-security/two-factor-authentication',
+        'account-security/kyc-verification',
       ],
     },
     {
       type: 'category',
-      label: 'Troubleshooting',
+      label: 'Trade on CoinByte',
       items: [
-        'troubleshooting/common-issues',
-        'troubleshooting/advanced',
-        'troubleshooting/contact-support',
+        'trading/instant-buy',
+        'trading/spot-trading',
       ],
     },
     {
       type: 'category',
-      label: 'Advanced Guides',
+      label: 'Deposits and Withdrawals',
       items: [
-        'advanced/customization',
-        'advanced/integration',
-        'advanced/security',
-        'advanced/api-usage',
+        'deposits-withdrawals/deposit-aud',
+        'deposits-withdrawals/crypto-withdrawal',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Use of CoinByte',
+      items: [
+        'user-guide/price-alerts',
+        'user-guide/referral-program',
       ],
     },
   ],

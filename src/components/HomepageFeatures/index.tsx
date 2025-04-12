@@ -1,55 +1,63 @@
 import React from 'react';
-import type {ReactNode} from 'react';
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
-type FeatureItem = {
+type ArticleCollection = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
+  description: string;
+  count: number;
+  link: string;
+  icon?: string;
 };
 
-const FeatureList: FeatureItem[] = [
+const ArticleCollections: ArticleCollection[] = [
   {
-    title: 'Getting Started',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Learn the basics of our product and get started with your first steps.
-      </>
-    ),
+    title: 'Account, security, verification',
+    description: 'Find out about verification, discover how to make changes and better protect your account.',
+    count: 19,
+    link: '/helpcenter/docs/category/account-security',
+    icon: '🔐',
   },
   {
-    title: 'Troubleshooting',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Find solutions to common issues and learn how to resolve them.
-      </>
-    ),
+    title: 'Trade on CoinByte',
+    description: 'Find out the trading and buy/sell function of CoinByte',
+    count: 12,
+    link: '/helpcenter/docs/category/trading',
+    icon: '📈',
   },
   {
-    title: 'Advanced Guides',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Dive deep into advanced features and customization options.
-      </>
-    ),
+    title: 'Deposits and Withdrawals',
+    description: 'To find out deposits and withdrawals of both crypto and fiat assets.',
+    count: 15,
+    link: '/helpcenter/docs/category/deposits-withdrawals',
+    icon: '💳',
+  },
+  {
+    title: 'Use of CoinByte',
+    description: 'Learn how to personalize your experience and get solutions to frequently asked questions.',
+    count: 7,
+    link: '/helpcenter/docs/category/user-guide',
+    icon: '📱',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function ArticleCard({title, description, count, link, icon}: ArticleCollection) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+    <div className={clsx('col col--6', styles.featureCard)}>
+      <Link to={link} className={styles.cardLink}>
+        <div className={styles.cardContent}>
+          <div className={styles.cardHeader}>
+            <span className={styles.cardIcon}>{icon}</span>
+            <h3>{title}</h3>
+          </div>
+          <p>{description}</p>
+          <div className={styles.cardFooter}>
+            <span>{count} articles</span>
+            <span className={styles.arrow}>→</span>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 }
@@ -58,9 +66,10 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h2 className={styles.sectionTitle}>Advice and answers from the CoinByte Team</h2>
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {ArticleCollections.map((props, idx) => (
+            <ArticleCard key={idx} {...props} />
           ))}
         </div>
       </div>

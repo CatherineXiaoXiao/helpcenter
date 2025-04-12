@@ -9,3 +9,87 @@
   height: 200px;
   width: 200px;
 }
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+.featureCard {
+  margin-bottom: 2rem;
+}
+
+.cardLink {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.cardContent {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.3s ease;
+}
+
+.cardContent:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-primary);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.cardHeader h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--ifm-heading-color);
+}
+
+.cardContent p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+.cardFooter {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ifm-color-primary);
+  font-size: 0.9rem;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.cardContent:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .cardContent {
+  background: var(--ifm-card-background-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .cardContent:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

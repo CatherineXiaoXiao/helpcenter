@@ -1,0 +1,8 @@
+{
+  "label": "Deposits and Withdrawals",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "To find out deposits and withdrawals of both crypto and fiat assets."
+  }
+} 

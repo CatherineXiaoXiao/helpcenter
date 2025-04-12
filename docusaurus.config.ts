@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Help Center',
+  title: 'CoinByte Help Center',
   tagline: 'Find answers to your questions',
   favicon: 'img/favicon.ico',
 
@@ -14,9 +14,9 @@ const config: Config = {
   baseUrl: '/helpcenter/',
   organizationName: 'CatherineXiaoXiao',
   projectName: 'helpcenter',
-  trailingSlash: false,
+  trailingSlash: true,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -25,12 +25,17 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'zh'],
+    path: 'i18n',
     localeConfigs: {
       en: {
         label: 'English',
+        htmlLang: 'en-US',
+        direction: 'ltr',
       },
       zh: {
         label: '中文',
+        htmlLang: 'zh-CN',
+        direction: 'ltr',
       },
     },
   },
@@ -46,21 +51,9 @@ const config: Config = {
           editUrl: 'https://github.com/CatherineXiaoXiao/helpcenter/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
+          routeBasePath: 'docs',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/CatherineXiaoXiao/helpcenter/edit/main/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -72,70 +65,21 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Help Center',
+      title: 'CoinByte Help Center',
       logo: {
-        alt: 'Help Center Logo',
+        alt: 'CoinByte Help Center Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Docs',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
           type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/CatherineXiaoXiao/helpcenter',
-          label: 'GitHub',
           position: 'right',
         },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Getting Started',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/your-product',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/your-discord',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/CatherineXiaoXiao/helpcenter',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Your Company, Inc. Built with Docusaurus.`,
+      copyright: `CoinByte Help Center | Your trusted guide to cryptocurrency trading and investment | Copyright © ${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,
