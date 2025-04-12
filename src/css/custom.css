@@ -6,26 +6,47 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #01C19A;
+  --ifm-color-primary-dark: #01AE8B;
+  --ifm-color-primary-darker: #01A283;
+  --ifm-color-primary-darkest: #01876C;
+  --ifm-color-primary-light: #01D4A9;
+  --ifm-color-primary-lighter: #01E0B3;
+  --ifm-color-primary-lightest: #02F5C6;
+  
+  --ifm-color-secondary: #f5f7fa;
+  --ifm-color-secondary-dark: #e4e6e8;
+  --ifm-color-secondary-darker: #c9cdd2;
+  --ifm-color-secondary-darkest: #9ea3ab;
+  
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #f5f7fa;
+  
+  --ifm-color-content: #444444;
+  --ifm-heading-color: #333333;
+  
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #01E0B3;
+  --ifm-color-primary-dark: #01D4A9;
+  --ifm-color-primary-darker: #01C19A;
+  --ifm-color-primary-darkest: #01AE8B;
+  --ifm-color-primary-light: #02F5C6;
+  --ifm-color-primary-lighter: #14F7CC;
+  --ifm-color-primary-lightest: #3CF9D5;
+  
+  --ifm-background-color: #1e2125;
+  --ifm-navbar-background-color: #1b1d20;
+  --ifm-footer-background-color: #1b1d20;
+  
+  --ifm-color-content: #e3e3e3;
+  --ifm-heading-color: #ffffff;
+  
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -106,4 +127,17 @@
 
 [data-theme='dark'] .category-list .card:hover {
   border-color: var(--ifm-color-primary-lighter);
+}
+
+/* 自定义导航栏样式 */
+.navbar {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+  height: 2rem;
+}
+
+.footer {
+  --ifm-footer-padding-vertical: 2rem;
 }

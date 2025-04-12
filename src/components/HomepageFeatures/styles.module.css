@@ -1,11 +1,123 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background-color: var(--ifm-color-secondary);
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+.featureCard {
+  margin-bottom: 2rem;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.cardContent {
+  background-color: var(--ifm-background-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cardContent:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--ifm-color-primary-lighter);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cardIcon {
+  font-size: 1.75rem;
+  margin-right: 1rem;
+  background-color: rgba(1, 193, 154, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardHeader h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.cardContent p {
+  flex: 1;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-content);
+  line-height: 1.5;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-secondary-dark);
+  font-size: 0.9rem;
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+.arrow {
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.cardContent:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* 深色模式适配 */
+[data-theme='dark'] .cardContent {
+  background-color: var(--ifm-card-background-color);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='dark'] .cardContent:hover {
+  border-color: var(--ifm-color-primary-lighter);
+}
+
+[data-theme='dark'] .cardIcon {
+  background-color: rgba(1, 224, 179, 0.15);
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 2rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
 }

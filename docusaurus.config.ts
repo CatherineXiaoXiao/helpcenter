@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Help Center',
+  title: 'CoinByte',
   tagline: 'Find answers to your questions',
   favicon: 'img/favicon.ico',
 
@@ -73,86 +73,60 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en", "zh"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        docsRouteBasePath: "/docs",
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 50,
+        hideSearchBarWithNoSearchContext: false,
+        searchBarPosition: 'auto',
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Help Center',
       logo: {
-        alt: 'Help Center Logo',
-        src: 'img/logo.svg',
+        alt: 'CoinByte Logo',
+        src: 'img/coinbyte_logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Docs',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/CatherineXiaoXiao/helpcenter',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // 已隐藏导航元素
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Docs',
+        // },
+        // {to: '/blog', label: 'Blog', position: 'left'},
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
+        // {
+        //   href: 'https://github.com/CatherineXiaoXiao/helpcenter',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Getting Started',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/your-product',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/your-discord',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/CatherineXiaoXiao/helpcenter',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Your Company, Inc. Built with Docusaurus.`,
+      links: [],
+      copyright: `Copyright © ${new Date().getFullYear()} CoinByte Help Center. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-    },
-    algolia: {
-      appId: 'YOUR_APP_ID',  // 将在获得 Algolia 密钥后更新
-      apiKey: 'YOUR_SEARCH_API_KEY',  // 将在获得 Algolia 密钥后更新
-      indexName: 'help-center',
-      contextualSearch: true,
-      searchParameters: {},
-      searchPagePath: 'search',
     },
   } satisfies Preset.ThemeConfig,
 };
