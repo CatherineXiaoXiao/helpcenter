@@ -141,3 +141,121 @@
 .footer {
   --ifm-footer-padding-vertical: 2rem;
 }
+
+/* Hide sidebar but keep breadcrumbs */
+aside.theme-doc-sidebar-container {
+  display: none !important;
+}
+
+/* Make content full width now that sidebar is gone */
+.docMainContainer, main.docMainContainer {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* Ensure breadcrumbs are visible */
+nav.theme-doc-breadcrumbs, 
+.breadcrumbsContainer,
+div[class*='docBreadcrumbs'] {
+  display: block !important;
+  margin-bottom: 1rem;
+}
+
+/* Center the actual content with proper width */
+.container, 
+article > .markdown,
+.docItemContainer,
+.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module,
+main > article {
+  margin: 0 auto !important;
+  max-width: 1200px !important;
+  padding: 0 var(--ifm-spacing-horizontal) !important;
+}
+
+/* Add proper spacing around main content */
+.docPage, main.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-styles-module {
+  padding: 1.5rem var(--ifm-spacing-horizontal) !important;
+}
+
+/* Adjust layout for no sidebar */
+.docPage, .docPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-styles-module {
+  display: block !important;
+}
+
+/* Improve card layout in centered view */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.category-list .col {
+  display: flex;
+}
+
+@media (max-width: 996px) {
+  .category-list .col {
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* 相关文章样式 */
+.related-articles {
+  margin-top: 3rem !important;
+  padding: 1.5rem !important;
+  border-top: 2px solid var(--ifm-color-primary-lighter) !important;
+  background-color: var(--ifm-color-secondary) !important;
+  border-radius: 8px !important;
+  clear: both !important;
+}
+
+.related-articles h2 {
+  font-size: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  color: var(--ifm-color-primary) !important;
+  text-align: center !important;
+}
+
+.related-articles .card-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+  gap: 1rem !important;
+  padding: 0 !important;
+  list-style: none !important;
+  margin: 0 !important;
+}
+
+.related-articles .card {
+  border: 1px solid var(--ifm-color-primary-lightest) !important;
+  border-radius: var(--ifm-card-border-radius) !important;
+  box-shadow: var(--ifm-global-shadow-lw) !important;
+  transition: all 0.3s ease !important;
+  padding: 1rem !important;
+  margin: 0 !important;
+}
+
+.related-articles .card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 16px rgba(1, 193, 154, 0.15) !important;
+  border-color: var(--ifm-color-primary) !important;
+  background-color: white !important;
+}
+
+.related-article-link {
+  display: block !important;
+  font-weight: 500 !important;
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none !important;
+  font-size: 1.1rem !important;
+  text-align: center !important;
+}
+
+@media (max-width: 768px) {
+  .related-articles .card-container {
+    grid-template-columns: 1fr;
+  }
+}

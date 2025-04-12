@@ -25,6 +25,18 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Account & Security',
+      link: {
+        type: 'doc',
+        id: 'account-security/index',
+      },
+      items: [
+        'account-security/create-account',
+        'account-security/two-factor-authentication',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Troubleshooting',
       items: [
         'troubleshooting/common-issues',

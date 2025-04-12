@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /account-security
+hide_table_of_contents: true
 ---
 
 # Account & Security
