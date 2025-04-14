@@ -97,7 +97,7 @@ const config: Config = {
       title: 'Help Center',
       logo: {
         alt: 'CoinByte Logo',
-        src: 'img/coinbyte_support.svg',
+        src: 'img/coinbyte_support1.svg',
       },
       items: [
         // 已隐藏导航元素

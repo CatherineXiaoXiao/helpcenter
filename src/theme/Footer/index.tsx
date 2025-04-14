@@ -127,10 +127,10 @@ export default function FooterWrapper(props: Props): ReactNode {
                 <li className={`${styles.title} ${styles.titleWrapper}`}>Sell Crypto</li>
                 {footerLinks.sellCrypto.map(renderLinkItem)}
              </ul>
-             <ul>
+             {/* <ul>
                 <li className={styles.title}>Trade</li>
                 {footerLinks.trade.map(renderLinkItem)}
-             </ul>
+             </ul> */}
           </div>
           <div className={styles.right}>
             <div className={styles.title}>
@@ -148,16 +148,14 @@ export default function FooterWrapper(props: Props): ReactNode {
         </div>
 
         {/* Community Links */}
-        <div className={styles.community}>
+        {/* <div className={styles.community}>
           <span>Community</span>
           {communityLinks.map((link, index) => (
-            // Using standard <a> tags as icon font needs setup
             <a key={index} href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.iconClass}>
-              {/* Placeholder for icon - Requires icon font setup */}
               <i className={`iconfont ${link.iconClass}`} /> 
             </a>
           ))}
-        </div>
+        </div> */}
 
         {/* Copyright - Use config if available, otherwise hardcode */}
          <div className={styles.copyright}>

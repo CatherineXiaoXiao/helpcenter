@@ -109,7 +109,6 @@ Icon font setup is required for community icons
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
-  flex-wrap: wrap; /* Allow wrapping */
 }
 
 .left {
