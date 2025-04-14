@@ -27,52 +27,60 @@
 
 .cardContent {
   background-color: var(--ifm-background-color);
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  padding: 2rem 1.5rem;
   height: 100%;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--ifm-custom-border-color, rgba(0, 0, 0, 0.08));
 }
 
 .cardContent:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border-color: var(--ifm-color-primary-lighter);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-primary-light);
 }
 
 .cardHeader {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .cardIcon {
-  font-size: 1.75rem;
-  margin-right: 1rem;
-  background-color: rgba(1, 193, 154, 0.1);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  margin: 0 auto 1.5rem auto;
+  width: 100%;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.cardIcon img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .cardHeader h3 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: var(--ifm-color-primary);
+  color: var(--ifm-heading-color);
+  text-align: center;
+  line-height: 1.3;
 }
 
 .cardContent p {
   flex: 1;
   margin-bottom: 1.5rem;
-  color: var(--ifm-color-content);
-  line-height: 1.5;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.6;
+  text-align: center;
 }
 
 .cardFooter {
@@ -98,16 +106,16 @@
 
 /* 深色模式适配 */
 [data-theme='dark'] .cardContent {
-  background-color: var(--ifm-card-background-color);
-  border-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--ifm-background-surface-color);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme='dark'] .cardContent:hover {
-  border-color: var(--ifm-color-primary-lighter);
+  border-color: var(--ifm-color-primary-light);
 }
 
 [data-theme='dark'] .cardIcon {
-  background-color: rgba(1, 224, 179, 0.15);
+  /* Removed background-color */
 }
 
 /* 响应式调整 */

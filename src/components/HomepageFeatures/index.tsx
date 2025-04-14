@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import { usePluginData } from '@docusaurus/useGlobalData';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import type { ReactNode } from 'react';
 import styles from './styles.module.css';
 
@@ -9,7 +10,7 @@ type ArticleCollection = {
   title: string;
   description: string;
   link: string;
-  icon?: string;
+  imageUrl?: string;
   category: string;
 };
 
@@ -19,28 +20,28 @@ const ArticleCollections: ArticleCollection[] = [
     description: 'Find out about verification, discover how to make changes and better protect your account.',
     category: 'account-security',
     link: '/helpcenter/docs/account-security',
-    icon: '🔐',
+    imageUrl: '/img/icon-security.png',
   },
   {
     title: 'Trade on CoinByte',
     description: 'Find out the trading and buy/sell function of CoinByte',
     category: 'trading',
     link: '/helpcenter/docs/trading',
-    icon: '📈',
+    imageUrl: '/img/icon-trading.png',
   },
   {
     title: 'Deposits and Withdrawals',
     description: 'To find out deposits and withdrawals of both crypto and fiat assets.',
     category: 'deposits-withdrawals',
     link: '/helpcenter/docs/deposits-withdrawals',
-    icon: '💳',
+    imageUrl: '/img/icon-deposits.png',
   },
   {
     title: 'Use of CoinByte',
     description: 'Learn how to personalize your experience and get solutions to frequently asked questions.',
     category: 'user-guide',
     link: '/helpcenter/docs/user-guide',
-    icon: '📱',
+    imageUrl: '/img/icon-guide.png',
   },
 ];
 
@@ -48,13 +49,17 @@ interface ArticleCardProps extends ArticleCollection {
   count: number;
 }
 
-function ArticleCard({title, description, count, link, icon}: ArticleCardProps) {
+function ArticleCard({title, description, count, link, imageUrl}: ArticleCardProps) {
+  const imagePath = useBaseUrl(imageUrl);
+
   return (
-    <div className={clsx('col col--6', styles.featureCard)}>
+    <div className={clsx('col col--3', styles.featureCard)}>
       <Link to={link} className={styles.cardLink}>
         <div className={styles.cardContent}>
           <div className={styles.cardHeader}>
-            <span className={styles.cardIcon}>{icon}</span>
+            <div className={styles.cardIcon}>
+              {imagePath && <img src={imagePath} alt={`${title} icon`} />}
+            </div>
             <h3>{title}</h3>
           </div>
           <p>{description}</p>
