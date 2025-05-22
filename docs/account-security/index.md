@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 import DocumentList from '@site/src/components/DocumentList';
 
-# Account & Security
+# Account, security, verification
 
 Learn how to create, manage, and secure your CoinByte account, including security settings and identity verification.
 
