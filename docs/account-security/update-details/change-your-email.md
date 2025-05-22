@@ -1,6 +1,6 @@
 ---
 title: Change Your Email Address
-slug: /account-security/change-your-email
+slug: /account-security//change-your-email
 description: Learn how to update your CoinByte account email and verify your new address.
 ---
 
@@ -32,4 +32,4 @@ You can change the email address linked to your CoinByte account in just a few s
 
 ## 🛠 Need Help?
 
-If you're unable to access your old email address or experience issues during the process, please [contact our support team](https://support.coinbyte.com) for manual assistance.
+If you're unable to access your old email address or experience issues during the process, please [contact our support team](https://cs.coinbyte.com) for manual assistance.
