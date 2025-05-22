@@ -22,6 +22,10 @@ Learn how to create, manage, and secure your CoinByte account, including securit
 
 <DocumentList category="account-security" />
 
+## Update Details
+
+<DocumentList category="account-security/update-details" />
+
 ## Security Best Practices
 
 Securing your account is essential for safely using the CoinByte platform. We recommend:
