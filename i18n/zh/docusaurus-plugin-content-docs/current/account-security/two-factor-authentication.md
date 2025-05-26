@@ -7,7 +7,7 @@ import RelatedArticles from '@site/src/components/RelatedArticles';
 
 # Two-Factor Authentication (2FA)
 
-Learn how to set up and use two-factor authentication to enhance the security of your CoinByte account.
+Learn how to set up and use two-factor authentication to enhance the security.
 
 ## What is Two-Factor Authentication?
 
