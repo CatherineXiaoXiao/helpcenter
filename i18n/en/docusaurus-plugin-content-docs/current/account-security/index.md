@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /account-security
 ---
 
-# Account & Security
+# Account & 213123Security
 
 Learn how to create, manage, and secure your CoinByte account, including security settings and identity verification.
 
