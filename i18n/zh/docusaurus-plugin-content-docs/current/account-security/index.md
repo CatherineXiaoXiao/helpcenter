@@ -86,6 +86,8 @@ Learn how to create, manage, and secure your CoinByte account, including securit
     </div>
 </div>
 
+## Update details
+
 ## Security Best Practices
 
 Securing your account is essential for safely using the CoinByte platform. We recommend:
