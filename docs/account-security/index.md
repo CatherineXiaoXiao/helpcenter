@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /account-security
+slug: /account-security-verification
 hide_table_of_contents: true
 ---
 
@@ -20,7 +20,7 @@ Learn how to create, manage, and secure your CoinByte account, including securit
 
 ## Document List
 
-<DocumentList category="account-security" />
+<DocumentList category="Create-account" />
 
 ## Update Details
 
