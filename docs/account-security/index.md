@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /account-security-verification
+slug: /account-security
 hide_table_of_contents: true
 ---
 
