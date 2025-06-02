@@ -23,7 +23,7 @@ Learn how to create, manage, and secure your CoinByte account, including securit
 
 ## Create CoinByte Account
 
-<DocumentList category="account-security/update-details" />
+<DocumentList category="account-security/create-coinbyte-account" />
 
 ## Update Details
 
