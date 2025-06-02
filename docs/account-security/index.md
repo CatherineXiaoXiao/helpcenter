@@ -19,6 +19,9 @@ Learn how to create, manage, and secure your CoinByte account, including securit
 - How can I change my account information?
 
 ## Document List
+<DocumentList category="Create-account" />
+
+## Document List
 
 <DocumentList category="Create-account" />
 
