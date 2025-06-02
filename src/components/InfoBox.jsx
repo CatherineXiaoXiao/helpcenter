@@ -1,6 +1,7 @@
 import React from 'react';
 import './ListStyles.css';
 
-export const InfoBox = ({ children }) => {
+const InfoBox = ({ children }) => {
   return <div className="info-box">{children}</div>;
 };
+export default InfoBox
