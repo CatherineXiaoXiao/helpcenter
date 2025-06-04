@@ -25,6 +25,10 @@ Learn how to create, manage, and secure your CoinByte account, including securit
 
 <DocumentList category="account-security/create-coinbyte-account" />
 
+## Verification and Security
+
+<DocumentList category="account-security/verification-and-security" />
+
 ## Update Details
 
 <DocumentList category="account-security/update-details" />
