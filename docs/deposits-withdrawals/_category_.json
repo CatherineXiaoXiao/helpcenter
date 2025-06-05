@@ -1,4 +1,9 @@
 {
-  "label": "充值与提现",
-  "position": 4
-} 
+  "label": "deposits and withdrawals",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Deposits and Withdrawals",
+    "description": "Learn how to deposit and withdraw funds and crypto on CoinByte securely and efficiently. "
+  }
+}
