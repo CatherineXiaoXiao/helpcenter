@@ -39,7 +39,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'deposits and withdrawals',
+      label: 'Deposits and Withdrawals',
       link: {
         type: 'doc',
         id: 'deposits-withdrawals/index', 
