@@ -22,17 +22,17 @@ Each asset has specific deposit and withdrawal channels, processing times, and f
 
 ## Deposti Fiat asset
 
-<DocumentList category="deposits-withdrawals" />
+<DocumentList category="deposits-withdrawals/deposit-fiat-asset" />
 
 ## withdraw Fiat asset
 
-<DocumentList category="deposits-withdrawals" />
+<DocumentList category="deposits-withdrawals/withdraw-fiat-asset" />
 
 ## Deposti Crypto
 
-<DocumentList category="deposits-withdrawals" />
+<DocumentList category="deposits-withdrawals/deposit-crypto" />
 
 ## Withdrawa Crypto
 
-<DocumentList category="deposits-withdrawals" />
+<DocumentList category="deposits-withdrawals/withdraw-crypto" />
 
