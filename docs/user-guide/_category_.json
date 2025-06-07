@@ -1,4 +1,9 @@
 {
-  "label": "使用指南",
-  "position": 5
-} 
+  "label": "Use of CoinByte",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "title": "Use of CoinByte",
+    "description": "Learn how to use CoinByte’s features and services with step-by-step guides, tips, and platform walkthroughs. "
+  }
+}
