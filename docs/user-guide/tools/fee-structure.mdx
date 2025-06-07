@@ -1,0 +1,75 @@
+---
+id: trading-fee-structure
+title: Trading Fee Structure
+sidebar_label: Fee Structure
+description: Overview of CoinByte spot trading and instant trade fees, maker/taker fees, and fee calculation examples.
+---
+
+import InfoBox from '@site/src/components/InfoBox';
+import WarningBox from '@site/src/components/WarningBox';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+# **Trading Fee Structure**
+
+Below is a breakdown of the trading fees applied to different types of trades on CoinByte.
+
+<div style={{
+  border: '1px solid #E5F5F2',
+  borderRadius: '8px',
+  overflow: 'hidden',
+  fontSize: '0.95rem',
+  marginBottom: '2rem',
+  boxShadow: '0 2px 6px rgba(0, 0, 0, 0.04)'
+}}>
+
+<table style={{
+  width: '100%',
+  borderCollapse: 'collapse'
+}}>
+  <thead style={{ backgroundColor: '#E5F5F2', color: '#0FB9B1' }}>
+    <tr>
+      <th style={{ padding: '12px', textAlign: 'left' }}>Type</th>
+      <th style={{ padding: '12px', textAlign: 'left' }}>Fee</th>
+      <th style={{ padding: '12px', textAlign: 'left' }}>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr style={{ borderTop: '1px solid #ccc' }}>
+      <td style={{ padding: '12px', fontWeight: 500 }}>Spot Market</td>
+      <td style={{ padding: '12px' }}>
+        Taker: 0.1% + spread<br />
+        Maker: 0.1% + spread
+      </td>
+      <td style={{ padding: '12px' }}>
+        <strong>Fee for spot trading = Fee rate × Amount of crypto bought when order was filled.</strong><br /><br />
+        Take USDT/USD as an example. If trader A (0.1% maker fee and 0.15% taker fee, spread is 0.02%) buys 1 USDT at the market price of 100 USD, A’s trading fee = (0.15% + 0.02%) × 1 = 0.0017 USDT.<br />
+        A receives (1 - 0.0017) = 0.9983 USDT.<br /><br />
+        If A sells 1 USDT at a limit price and buys 100 USD, A is considered the maker.<br />
+        A’s fee = (0.1% + 0.02%) × 100 = 0.06 USD. A receives 99.94 USD after deduction.<br /><br />
+        <strong>Please note that we provide one of the lowest spreads, but the spread will vary based on the specific Crypto Asset and market liquidity.</strong>
+      </td>
+    </tr>
+
+    <tr style={{ borderTop: '1px solid #ccc', backgroundColor: '#F6FCFB' }}>
+      <td style={{ padding: '12px', fontWeight: 500 }}>Instant Buy, Sell & Swap</td>
+      <td style={{ padding: '12px' }}>
+        Buy: 0%<br />
+        Sell: 0%<br />
+        Swap: 0%
+      </td>
+      <td style={{ padding: '12px' }}>
+        <strong>The same calculation applies as Spot Market trade.</strong>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+<InfoBox>
+💡 <strong>Tip:</strong> Fees are automatically calculated and displayed before you confirm a trade.
+</InfoBox>
+
+<RelatedArticles category="trading" />
