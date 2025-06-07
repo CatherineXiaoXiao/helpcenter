@@ -1,93 +1,69 @@
 ---
-id: trading-fee-structure
+id: fee-structure
 title: Trading Fee Structure
-sidebar_label: Fee Structure
-description: Overview of CoinByte spot trading and instant trade fees, maker/taker fees, and fee calculation examples.
+sidebar_label: Trading Fee
+sidebar_position: 10
+description: "View detailed information about CoinByte’s fee structure for Spot Market, Instant Buy, Sell & Swap."
 ---
 
 import InfoBox from '@site/src/components/InfoBox';
-import WarningBox from '@site/src/components/WarningBox';
 import RelatedArticles from '@site/src/components/RelatedArticles';
 
 # **Trading Fee Structure**
 
-Below is a breakdown of the trading fees applied to different types of trades on CoinByte.
+CoinByte offers a competitive and transparent trading fee model. Below is a breakdown of our trading fee structure across different trading modes:
 
-<style>
-.custom-fee-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 2rem;
-  font-size: 0.94rem;
-}
-.custom-fee-table th {
-  background-color: #01c19a;
-  color: #ffffff;
-  font-weight: bold;
-  padding: 12px;
-  text-align: center;
-  white-space: nowrap;
-}
-.custom-fee-table td {
-  border: 1px solid #e0e0e0;
-  padding: 12px;
-  vertical-align: top;
-}
-.custom-fee-table td:first-child,
-.custom-fee-table td:nth-child(2) {
-  white-space: nowrap;
-}
-.custom-fee-table tr:nth-child(2),
-.custom-fee-table tr:nth-child(3) {
-  height: 130px;
-}
-.fee-explanation {
-  font-size: 0.89rem;
-  line-height: 1.5;
-}
-</style>
-
-<table className="custom-fee-table">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Fee</th>
-      <th>Explanation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Spot Market</td>
-      <td>
-        Taker: 0.1% + spread<br/>
-        Maker: 0.1% + spread
-      </td>
-      <td className="fee-explanation">
-        <strong>Fee for spot trading = Fee rate × Amount of crypto bought when order was filled.</strong><br/><br/>
-        Take USDT/USD as an example. If trader A (0.1% maker fee and 0.15% taker fee, spread = 0.02%) buys 1 USDT at the market price of 100 USD, A’s trading fee = (0.15% + 0.02%) × 1 = 0.0017 USDT.<br/>
-        A receives (1 − 0.0017) = 0.9983 USDT.<br/><br/>
-        If A sells 1 USDT at a limit price and buys 100 USD, A is considered the maker.<br/>
-        A’s fee = (0.1% + 0.02%) × 100 = 0.12 USD. A receives 99.88 USD after deduction.<br/><br/>
-        <strong>Please note that we provide one of the lowest spreads, but the spread will vary based on the specific Crypto Asset and market liquidity.</strong>
-      </td>
-    </tr>
-    <tr>
-      <td>Buy/Sell</td>
-      <td>
-        Buy: 0%<br/>
-        Sell: 0%<br/>
-        Swap: 0%
-      </td>
-      <td className="fee-explanation">
-        <strong>The same calculation applies as Spot Market trade.</strong>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
+<div style={{ overflowX: 'auto', marginTop: '2rem', marginBottom: '2rem' }}>
+  <table style={{ borderCollapse: 'collapse', width: '100%', fontSize: '0.95rem' }}>
+    <thead>
+      <tr style={{ backgroundColor: '#01c19a', color: '#fff', fontWeight: 'bold', textAlign: 'center' }}>
+        <th style={{ padding: '12px 10px', whiteSpace: 'nowrap' }}>Type</th>
+        <th style={{ padding: '12px 10px', whiteSpace: 'nowrap' }}>Fee</th>
+        <th style={{ padding: '12px 10px', textAlign: 'left' }}>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ backgroundColor: '#fff' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'top', whiteSpace: 'nowrap' }}>
+          Spot Market
+        </td>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'top', whiteSpace: 'nowrap' }}>
+          Taker: 0.1% + spread  
+          <br/>
+          Maker: 0.1% + spread
+        </td>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', fontSize: '0.92rem' }}>
+          <strong>Fee for spot trading = Fee rate × Amount of crypto bought when order was filled.</strong>
+          <br/><br/>
+          Take USDT/USD as an example. If trader A (0.1% maker fee and 0.15% taker fee, spread is 0.02%) buys 1 USDT at the market price of 100 USD, A’s trading fee = (0.15% + 0.02%) × 1 = 0.0017 USDT. A receives (1 − 0.0017) = 0.9983 USDT.
+          <br/><br/>
+          If A sells 1 USDT at a limit price and buys 100 USD, A is the maker. The trading fee = (0.1% + 0.02%) × 100 = 0.12 USD. A receives (100 − 0.12) = 99.88 USD.
+          <br/><br/>
+          <strong>Please note that we provide one of the lowest spreads, but the spread will vary based on the specific Crypto Asset and market liquidity.</strong>
+        </td>
+      </tr>
+      <tr style={{ backgroundColor: '#f6fafa' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'top', whiteSpace: 'nowrap' }}>
+          Instant Buy, Sell & Swap
+        </td>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'top', whiteSpace: 'nowrap' }}>
+          Buy: 0%  
+          <br/>
+          Sell: 0%  
+          <br/>
+          Swap: 0%
+        </td>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', fontSize: '0.95rem' }}>
+          <strong>The same calculation applies as Spot Market trade.</strong>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <InfoBox>
-💡 <strong>Tip:</strong> Fees are automatically calculated and displayed before you confirm a trade.
+💡 <strong>Note:</strong> Additional network fees may be applied by the blockchain depending on the asset and traffic. Please refer to the <a href="/helpcenter/docs/deposits-withdrawals/withdraw-crypto/withdrawal-network-fees"><strong>Withdrawal Network Fees</strong></a> article for more information.
 </InfoBox>
 
-<RelatedArticles category="trading" />
+<RelatedArticles category="user-guide/tools" />
+
