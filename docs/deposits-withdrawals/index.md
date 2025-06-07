@@ -36,3 +36,7 @@ Each asset has specific deposit and withdrawal channels, processing times, and f
 
 <DocumentList category="deposits-withdrawals/withdraw-crypto" />
 
+## FAQ
+
+<DocumentList category="deposits-withdrawals/faq" />
+
